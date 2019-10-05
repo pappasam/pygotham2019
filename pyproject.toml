@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 79
+
+[tool.poetry]
+name = "hovercraft_presentation"
+version = "0.1.0"
+description = "A presentation using Hovercraft!"
+authors = ["John Doe <john.doe@hotmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+hovercraft = { git = "https://github.com/regebro/hovercraft", branch = "master" }
+pandoc-latex-newpage = "^0.1.1"
+matplotlib = "^3.1.1"
+matplotlib-venn = "^0.11.5"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.3.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

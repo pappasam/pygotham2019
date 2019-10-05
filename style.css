@@ -1,0 +1,100 @@
+/* Offline fonts */
+
+@font-face {
+  font-family: FiraSans;
+  src:
+  url('./fonts/Fira-4.202/woff2/FiraSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: FiraSansBold;
+  src:
+  url('./fonts/Fira-4.202/woff2/FiraSans-Bold.woff2') format('woff2');
+}
+
+/* Formatting */
+
+.step {
+  /* PyGotham is 16:9 */
+  width: 1600px;
+  height: 900px;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: FiraSans;
+  font-size: 35px;
+  text-align: center;
+}
+
+.citation {
+  font-size: 10px;
+}
+
+h1, h2, h3 {
+  font-family: FiraSansBold;
+}
+
+img {
+  object-fit: cover;
+}
+
+img.no-crop {
+  object-fit: none;
+}
+
+pre.highlight.code {
+  display: inline-block;
+  background-color: #FFF8D8;
+  padding: 1em;
+  border-radius: 0.5em;
+  width: 1000px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ol, ul { */
+/*   text-align: center; */
+/* } */
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  /* margin-left: 0.5em; */
+  width: 1000px;
+}
+
+li {
+  padding: 15px;
+  text-align: left;
+}
+
+th, td {
+  padding: 15px;
+}
+
+td {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+.step:not(.active) {
+  opacity: 0;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
